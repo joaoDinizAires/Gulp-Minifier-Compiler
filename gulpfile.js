@@ -12,7 +12,7 @@ const sassPath = path.join(__dirname, 'src/scss/*.scss'),
     cssPath = path.join(__dirname, 'build/css/main.css'),
     jsPath = path.join(__dirname, 'src/scripts/*.js'),
     jsBuildPath = path.join(__dirname, 'build/scripts'),
-    imgPath = path.join(__dirname, 'src/img'),
+    imgPath = path.join(__dirname, 'src/img/.*{png,jpg,jpeg,gif}'),
     imgPathBuild = path.join(__dirname, 'build/img');
 task('sassCompiler', () => {
     return src(sassPath)
